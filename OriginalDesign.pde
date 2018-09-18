@@ -1,14 +1,16 @@
+//sets up variables for program to run
 int movement = 0;
 int counter = 0;
 
 void setup() {
   size(500, 500);
   background(#00CAFF);
+  frameRate(20);
+  println("Welcome To Turtle Land");
+  println("Click Anywhere On The Canvas");
 }
 
 void draw() {
-  delay(500);
-    
   // draws rectangle
   fill(colorSelector(counter));
   rect(movement, 0, 20, 20);
